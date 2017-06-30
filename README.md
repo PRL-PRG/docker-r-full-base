@@ -1,4 +1,4 @@
-# r-full
+# r-full-base
 
 This is a docker image based on Debian 8 jessie that contains R 3.4 with 
 all the native library dependencies installed using the
@@ -15,3 +15,12 @@ $ cd docker-r-full-base
 $ docker build --rm -t prl-prg/r-full-base .
 ```
 
+## Usage
+
+The image is also in docker HUB and therefore ready to be used without building it:
+
+```sh
+$ docker run -ti --rm prlprg/r-full-base
+```
+
+This will start R 3.4.
