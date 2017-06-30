@@ -17,7 +17,7 @@ $ docker build --rm -t prl-prg/r-full-base .
 
 ## Usage
 
-The image is also in docker HUB and therefore ready to be used without building it:
+The image is also in [docker HUB](https://hub.docker.com/r/prlprg/r-full-base/) and therefore ready to be used without building it:
 
 ```sh
 $ docker run -ti --rm prlprg/r-full-base
