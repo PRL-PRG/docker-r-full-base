@@ -11,7 +11,7 @@ There is also an extended version that actually have all the CRAN packages insta
 
 ```sh
 $ cd docker-r-full-base
-$ docker build --rm -t prl-prg/r-full-base .
+$ docker build --rm -t prlprg/r-full-base .
 ```
 
 ## Usage
