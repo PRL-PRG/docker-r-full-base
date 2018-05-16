@@ -7,19 +7,25 @@ all the native library dependencies installed using the
 There is also an extended version that actually have all the CRAN packages installed
 [docker-r-full-cran](https://github.com/PRL-PRG/docker-r-full-cran).
 
-## Buidling
-
-```sh
-$ cd docker-r-full-base
-$ docker build --rm -t prlprg/r-full-base .
-```
-
 ## Usage
 
-The image is also in [docker HUB](https://hub.docker.com/r/prlprg/r-full-base/) and therefore ready to be used without building it:
+The image is available in [docker HUB](https://hub.docker.com/r/prlprg/r-full-base/).
+To run it simply execute:
 
 ```sh
 $ docker run -ti --rm prlprg/r-full-base
 ```
 
-This will start R.
+which will by default start R.
+
+## Buidling
+
+```sh
+./build.sh
+```
+
+which runs
+
+```sh
+docker build --rm -t prlprg/r-full-base .
+```

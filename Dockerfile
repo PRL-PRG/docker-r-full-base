@@ -6,7 +6,22 @@ RUN apt-get -y update && \
     curl \
     parallel \
     vim \
-    wget
+    wget \
+    libcurl4-openssl-dev \
+    libssl-dev \
+    librsvg2-dev \
+    libzmq3-dev \
+    libsodium-dev \
+    libwebp-dev \
+    libprotobuf-dev \
+    libcairo2-dev \
+    libjq-dev \
+    libpoppler-cpp-dev \
+    libhiredis-dev \
+    libmariadbclient-dev \
+    libxml2-dev \
+    libpq-dev \
+    unixodbc-dev
 
 # install all the dependencies from the rcheckserver meta package
 # from: http://statmath.wu.ac.at/AASC/debian/binary-amd64/rcheckserver_2.15.86_amd64.deb
