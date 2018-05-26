@@ -18,6 +18,9 @@ RUN echo "deb http://statmath.wu.ac.at/AASC/debian testing main non-free" > /etc
     apt-get -y update && \
     DEBIAN_FRONTEND=noninteractive apt-get -yq install rcheckserver
 
+ADD entrypoint.sh /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
+
 LABEL maintainer "krikava@gmail.com"
 
 CMD ["R"]
